@@ -114,7 +114,7 @@ const SwipeCard = ({
 
   return (
     <div
-      className={`absolute w-full max-w-sm mx-auto h-[600px] ${
+      className={`absolute inset-x-0 w-full max-w-sm mx-auto h-[600px] ${
         isTop ? "z-10" : "z-0"
       }`}
       style={{
@@ -244,4 +244,4 @@ const SwipeCard = ({
   );
 };
 
-export default SwipeCard;
+export default SwipeCard; 

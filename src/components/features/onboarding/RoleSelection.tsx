@@ -4,12 +4,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { User, Building, ArrowRight } from "lucide-react";
 import { UserRole } from "@/types/User";
+import { useNavigate } from "react-router-dom";
 
 interface RoleSelectionProps {
   onRoleSelect: (role: UserRole) => void;
 }
 
 const RoleSelection: React.FC<RoleSelectionProps> = ({ onRoleSelect }) => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <motion.div
@@ -123,7 +126,10 @@ const RoleSelection: React.FC<RoleSelectionProps> = ({ onRoleSelect }) => {
         <div className="text-center mt-8">
           <p className="text-sm text-muted-foreground">
             Already have an account?{" "}
-            <button className="text-blue-600 hover:underline font-medium">
+            <button 
+              className="text-blue-600 hover:underline font-medium"
+              onClick={() => navigate("/signin")}
+            >
               Sign in here
             </button>
           </p>

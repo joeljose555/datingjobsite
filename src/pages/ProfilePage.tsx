@@ -72,7 +72,7 @@ const ProfilePage = () => {
       <header className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <Button variant="ghost" size="icon" onClick={() => navigate("/")}>
+            <Button variant="ghost" size="icon" onClick={() => navigate(-1)}>
               <ArrowLeft className="h-5 w-5" />
             </Button>
             <h1 className="text-xl font-bold text-blue-600">Profile</h1>

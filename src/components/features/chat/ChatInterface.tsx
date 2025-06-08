@@ -232,30 +232,30 @@ const defaultConversations: Conversation[] = [
       {
         id: 'msg-2',
         senderId: 'user-1',
-        text: 'Hello! Yes, I'm very interested in the position. I have 3 years of experience with React.',
+        text: 'Hello! Yes, I\'m very interested in the position. I have 3 years of experience with React.',
         timestamp: new Date(Date.now() - 1000 * 60 * 25), // 25 minutes ago
         isRead: true,
       },
       {
         id: 'msg-3',
         senderId: 'user-2',
-        text: 'That's great to hear! Your resume looks impressive. Would you be available for an interview next week?',
+        text: 'That\'s great to hear! Your resume looks impressive. Would you be available for an interview next week?',
         timestamp: new Date(Date.now() - 1000 * 60 * 20), // 20 minutes ago
         isRead: true,
       },
       {
         id: 'msg-4',
         senderId: 'user-1',
-        text: 'Absolutely! I'm free on Tuesday and Thursday afternoon.',
+        text: 'Absolutely! I\'m free on Tuesday and Thursday afternoon.',
         timestamp: new Date(Date.now() - 1000 * 60 * 15), // 15 minutes ago
         isRead: true,
       },
       {
         id: 'msg-5',
         senderId: 'user-2',
-        text: 'Perfect! Let's schedule for Tuesday at 2 PM. I'll send you a calendar invite with the details.',
+        text: 'Perfect. I will send you a calendar invite shortly. We are excited to speak with you!',
         timestamp: new Date(Date.now() - 1000 * 60 * 10), // 10 minutes ago
-        isRead: true,
+        isRead: false,
       },
       {
         id: 'msg-6',
@@ -269,67 +269,21 @@ const defaultConversations: Conversation[] = [
   {
     id: 'conv-2',
     userId: 'user-3',
-    userName: 'Alex Chen',
-    userAvatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=alex',
-    lastMessage: 'We'd like to move forward with your application',
+    userName: 'Michael Chen',
+    userAvatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=michael',
+    lastMessage: 'Can you tell me more about your experience with Node.js?',
     lastMessageTime: new Date(Date.now() - 1000 * 60 * 60 * 2), // 2 hours ago
     unreadCount: 0,
     messages: [
       {
         id: 'msg-7',
         senderId: 'user-3',
-        text: 'Hello! Thanks for applying to our UX Designer position.',
-        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 3), // 3 hours ago
-        isRead: true,
-      },
-      {
-        id: 'msg-8',
-        senderId: 'user-1',
-        text: 'Hi Alex! Thank you for considering my application.',
-        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 2.5), // 2.5 hours ago
-        isRead: true,
-      },
-      {
-        id: 'msg-9',
-        senderId: 'user-3',
-        text: 'We'd like to move forward with your application',
-        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 2), // 2 hours ago
-        isRead: true,
-      },
-    ],
-  },
-  {
-    id: 'conv-3',
-    userId: 'user-4',
-    userName: 'Taylor Smith',
-    userAvatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=taylor',
-    lastMessage: 'Do you have experience with TypeScript?',
-    lastMessageTime: new Date(Date.now() - 1000 * 60 * 60 * 24), // 1 day ago
-    unreadCount: 0,
-    messages: [
-      {
-        id: 'msg-10',
-        senderId: 'user-4',
-        text: 'Hi there! I'm reviewing your application for the Senior Developer role.',
-        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 25), // 25 hours ago
-        isRead: true,
-      },
-      {
-        id: 'msg-11',
-        senderId: 'user-1',
-        text: 'Great to hear from you! I'm excited about the opportunity.',
-        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 24.5), // 24.5 hours ago
-        isRead: true,
-      },
-      {
-        id: 'msg-12',
-        senderId: 'user-4',
-        text: 'Do you have experience with TypeScript?',
-        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 24), // 24 hours ago
+        text: 'Can you tell me more about your experience with Node.js?',
+        timestamp: new Date(Date.now() - 1000 * 60 * 60 * 2),
         isRead: true,
       },
     ],
   },
 ];
 
-export default ChatInterface;
+export default ChatInterface; 
